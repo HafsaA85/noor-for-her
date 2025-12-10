@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}About | Noor for Her{% endblock %}
+
+{% block content %}
+<h1>About Noor for Her</h1>
+<p>
+    Noor for Her is a safe, faith-aligned space for Muslim women who want to
+    understand their anxiety, notice their triggers, and gently build a healthier,
+    calmer inner world.
+</p>
+
+<!-- SIDE-BY-SIDE LAYOUT -->
+<div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 2rem; margin-top: 3rem;">
+
+    <!-- TEXT (LEFT) -->
+    <div style="flex: 2;">
+        <h1>Hey, I’m Hafsa</h1>
+        <p>
+            I’m a Mindset & Confidence Coach for women who want emotional peace, 
+            clarity, and inner strength. But before I ever became a coach,
+            I was the child and even when became a woman struggling silently with anxiety.<br><br>
+
+            I know what it feels like to wake up with a heavy heart…<br>
+            To overthink every decision…<br>
+            To feel like my mind was running faster than I could breathe…<br>
+            To smile on the outside while feeling overwhelmed on the inside.<br><br>
+
+            There were days when even simple things — a conversation, a message, a task — 
+            felt like too much. And I kept thinking:<br><br>
+
+            “Why can’t I just be normal?”<br><br>
+
+            But the truth was…<br>
+            I wasn’t broken.<br>
+            I was overwhelmed, unheard, and emotionally tired.<br>
+            And that realization changed everything.
+        </p>
+    </div>
+
+    <!-- IMAGE (RIGHT) -->
+    <div style="flex: 1; display: flex; justify-content: flex-end;">
+        <img src="{% static 'images/profile-picture.png' %}" 
+             alt="Hafsa"
+             style="max-width: 260px; width: 100%; border-radius: 999px; object-fit: cover;">
+    </div>
+
+</div>
+
+{% endblock %}
